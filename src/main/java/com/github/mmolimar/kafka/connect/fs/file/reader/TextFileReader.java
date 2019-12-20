@@ -30,9 +30,9 @@ public class TextFileReader extends AbstractFileReader<TextFileReader.TextRecord
     private final TextOffset offset;
     private String currentLine;
     private boolean finished = false;
-    private LineNumberReader reader;
+    public LineNumberReader reader;
     private Schema schema;
-    private Charset charset;
+    public Charset charset;
 
     public TextFileReader(FileSystem fs, Path filePath, Map<String, Object> config) throws IOException {
         super(fs, filePath, new TxtToStruct(), config);
