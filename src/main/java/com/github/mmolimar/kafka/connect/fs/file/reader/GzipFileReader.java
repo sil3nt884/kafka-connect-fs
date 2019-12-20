@@ -20,4 +20,3 @@ public class GzipFileReader extends  TextFileReader {
         this.reader = new LineNumberReader(decoder);
     }
 }
-as
